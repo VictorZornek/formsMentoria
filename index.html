@@ -45,7 +45,7 @@
 
                     <div class="input-wrapper">
                         <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
-                        <input type="password" id="password" required >
+                        <input type="password" id="password" required minlength="6">
                     </div>
 
                 </div>
@@ -53,8 +53,8 @@
                 
 
             <fieldset>
-                <div class="fieldset-wrapper">
-                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                <div class="fieldset-wrapper" id="info">
+                    <legend >INFORMAÇÕES DO MENTOR</legend>
 
                     <div class="input-wrapper">
                         <label for="mentorName">Nome do seu mentor <span>(só o primeiro nome)</span></label>
@@ -74,15 +74,17 @@
                             <label for="mentoring-date">Data <span>(DD/MM/AAAA)</span></label>
                             <input type="date" id="mentoring-date" />
                         </div>
+                        
+                        <div class="hours">
+                            <div class="input-wrapper">
+                                <label for="mentoring-begin">Das</label>
+                                <input type="time" id="mentoring-begin" />
+                            </div>
     
-                        <div class="input-wrapper">
-                            <label for="mentoring-begin">Das</label>
-                            <input type="time" id="mentoring-begin" />
-                        </div>
-
-                        <div class="input-wrapper">
-                            <label for="mentoring-end">Até</label>
-                            <input type="time" id="mentoring-end" />
+                            <div class="input-wrapper">
+                                <label for="mentoring-end">Até</label>
+                                <input type="time" id="mentoring-end" />
+                            </div>
                         </div>
                     </div>
 
@@ -93,16 +95,19 @@
                             <label for="mentoring-date">Data <span>(DD/MM/AAAA)</span></label>
                             <input type="date" id="mentoring-date" />
                         </div>
+
+                        <div class="hours">
+                            <div class="input-wrapper">
+                                <label for="mentoring-begin">Das</label>
+                                <input type="time" id="mentoring-begin" />
+                            </div>
     
-                        <div class="input-wrapper">
-                            <label for="mentoring-begin">Das</label>
-                            <input type="time" id="mentoring-begin" />
+                            <div class="input-wrapper">
+                                <label for="mentoring-end">Até</label>
+                                <input type="time" id="mentoring-end" />
+                            </div>
                         </div>
 
-                        <div class="input-wrapper">
-                            <label for="mentoring-end">Até</label>
-                            <input type="time" id="mentoring-end" />
-                        </div>
                     </div>
                 </div>
             </fieldset>
